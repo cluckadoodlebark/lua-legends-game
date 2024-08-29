@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lua Legends - Diagnostic Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Diagnostic Test</h1>
+    <form id="diagnostic-form">
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. What is a variable in programming?</p>
+        <label><input type="radio" name="q1" value="a" /> A fixed value that cannot change</label><br />
+        <label><input type="radio" name="q1" value="b" /> A storage location paired with an associated symbolic name</label><br />
+        <label><input type="radio" name="q1" value="c" /> A function that performs a specific task</label><br />
+      </div>
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. Which of the following is the correct way to write a comment in Lua?</p>
+        <label><input type="radio" name="q2" value="a" /> <!-- This is a comment --></label><br />
+        <label><input type="radio" name="q2" value="b" /> # This is a comment</label><br />
+        <label><input type="radio" name="q2" value="c" /> -- This is a comment</label><br />
+      </div>
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. What does a loop do in programming?</p>
+        <label><input type="radio" name="q3" value="a" /> Executes code repeatedly until a condition is met</label><br />
+        <label><input type="radio" name="q3" value="b" /> Stores data for later use</label><br />
+        <label><input type="radio" name="q3" value="c" /> Checks if a condition is true or false</label><br />
+      </div>
+      <button type="button" onclick="submitDiagnostic()">Submit</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
